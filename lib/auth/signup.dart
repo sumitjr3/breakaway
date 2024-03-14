@@ -1,5 +1,6 @@
 import 'package:breakaway/auth/auth_controller.dart';
 import 'package:breakaway/constants/routes.dart';
+import 'package:breakaway/views/homepage.dart';
 import 'package:breakaway/widgets/my_button.dart';
 import 'package:breakaway/widgets/my_textfield.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -27,6 +28,8 @@ class _SignupViewState extends State<SignupView> {
     String password = passworController.text;
 
     _auth.signupUser(email, password);
+    Navigator.of(context)
+        .pushNamedAndRemoveUntil(homepageRoute, (route) => false);
 
     // if (user != null) {
     //   print('user is successfully created');
@@ -115,7 +118,7 @@ class _SignupViewState extends State<SignupView> {
             ),
 
             //signup button
-            MyButton(onTap: newUserSignIn),
+            MyButton(onTap: newUserSignIn, text: "SignUp"),
 
             //free space
             const SizedBox(
@@ -183,5 +186,3 @@ class _SignupViewState extends State<SignupView> {
     );
   }
 }
-
-class FirebaseAuthService {}

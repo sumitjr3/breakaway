@@ -1,3 +1,5 @@
+import 'package:breakaway/auth/auth_controller.dart';
+import 'package:breakaway/widgets/my_button.dart';
 import 'package:flutter/material.dart';
 
 class ProfileView extends StatelessWidget {
@@ -5,10 +7,14 @@ class ProfileView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    final AuthController _auth = AuthController();
+    return Scaffold(
       body: Center(
-        child: Text('profile'),
-      ),
+          child: MyButton(
+              onTap: () {
+                _auth.logout();
+              },
+              text: "logout")),
     );
   }
 }

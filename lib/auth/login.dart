@@ -103,6 +103,7 @@ class _LoginViewState extends State<LoginView> {
               // sign in button
               MyButton(
                 onTap: signUserIn,
+                text: "LogIn",
               ),
 
               const SizedBox(height: 50),
@@ -164,7 +165,7 @@ class _LoginViewState extends State<LoginView> {
                   const SizedBox(width: 4),
                   GestureDetector(
                     onTap: () {
-                      Navigator.of(context).pushNamed(signupRoute);
+                      Navigator.of(context).pushNamed(regionRoute);
                     },
                     child: const Text(
                       'Register now',

@@ -3,6 +3,7 @@ import 'dart:developer';
 
 import 'package:breakaway/auth/login.dart';
 import 'package:breakaway/views/homepage.dart';
+import 'package:breakaway/views/region_view.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
