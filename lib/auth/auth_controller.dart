@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:developer';
 
 import 'package:breakaway/auth/login.dart';
-import 'package:breakaway/views/home_page.dart';
+import 'package:breakaway/views/homepage.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

@@ -3,7 +3,7 @@ import 'package:breakaway/auth/login.dart';
 import 'package:breakaway/auth/signup.dart';
 import 'package:breakaway/constants/routes.dart';
 import 'package:breakaway/firebase_options.dart';
-import 'package:breakaway/views/home_page.dart';
+import 'package:breakaway/views/homepage.dart';
 import 'package:breakaway/views/splash_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';

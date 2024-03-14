@@ -1,6 +1,5 @@
 import 'package:breakaway/auth/auth_controller.dart';
 import 'package:breakaway/constants/routes.dart';
-import 'package:breakaway/views/home_page.dart';
 import 'package:breakaway/widgets/my_button.dart';
 import 'package:breakaway/widgets/my_textfield.dart';
 import 'package:firebase_auth/firebase_auth.dart';
