@@ -4,3 +4,4 @@ const signupRoute = '/signup/';
 const regionRoute = '/region/';
 const communityRoute = '/community/';
 const hobbiesViewRoute = '/hobbies/';
+const groupRoute = '/group/';

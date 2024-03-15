@@ -2,6 +2,7 @@ import 'package:breakaway/views/navigation_views/community_page.dart';
 import 'package:breakaway/views/navigation_views/group_page.dart';
 import 'package:breakaway/views/navigation_views/profile_page.dart';
 import 'package:flutter/material.dart';
+import 'package:uuid/uuid.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -12,7 +13,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   int _selectedIndex = 0;
-
+  var uuid = Uuid();
   void _navigateBottomBar(int index) {
     setState(() {
       _selectedIndex = index;
@@ -20,7 +21,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   final List<Widget> _pages = [
-    const CommunityView(),
+    CommunityView(),
     const GroupView(),
     const ProfileView(),
   ];

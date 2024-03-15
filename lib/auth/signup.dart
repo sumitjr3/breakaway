@@ -1,9 +1,7 @@
 import 'package:breakaway/auth/auth_controller.dart';
 import 'package:breakaway/constants/routes.dart';
-import 'package:breakaway/views/homepage.dart';
 import 'package:breakaway/widgets/my_button.dart';
 import 'package:breakaway/widgets/my_textfield.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class SignupView extends StatefulWidget {
@@ -81,7 +79,7 @@ class _SignupViewState extends State<SignupView> {
             //name textfield
             MyTextField(
               controller: fullNameController,
-              hintText: 'Full Name',
+              hintText: 'Enter UserName',
               input_icon: const Icon(Icons.person),
               obsecure: false,
             ),
