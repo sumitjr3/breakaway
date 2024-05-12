@@ -1,7 +1,4 @@
-const homepageRoute = '/home page/';
+const mainRoute = '/home/';
 const loginRoute = '/login/';
-const signupRoute = '/signup/';
-const regionRoute = '/region/';
-const communityRoute = '/community/';
-const hobbiesViewRoute = '/hobbies/';
-const groupRoute = '/group/';
+const siguproute = '/signup/';
+const homepageRoute = '/homepage/';

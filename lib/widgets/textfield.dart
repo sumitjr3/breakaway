@@ -1,4 +1,3 @@
-import 'package:breakaway/constants/themes.dart';
 import 'package:flutter/material.dart';
 
 class MyTextField extends StatelessWidget {
@@ -6,6 +5,7 @@ class MyTextField extends StatelessWidget {
   final input_icon;
   final String hintText;
   final bool obsecure;
+  final Color backgroundColor;
 
   const MyTextField({
     super.key,
@@ -13,30 +13,30 @@ class MyTextField extends StatelessWidget {
     required this.input_icon,
     required this.hintText,
     required this.obsecure,
+    required this.backgroundColor,
   });
 
   @override
   Widget build(BuildContext context) {
-    AppTheme appTheme = AppTheme();
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 25.0),
+      padding: EdgeInsets.symmetric(horizontal: 25.0),
       child: TextField(
         controller: controller,
         obscureText: obsecure,
         decoration: InputDecoration(
             enabledBorder: OutlineInputBorder(
-              borderSide:
-                  BorderSide(color: appTheme.studyTheme.colorScheme.secondary),
+              borderSide: const BorderSide(color: Colors.white),
+              borderRadius: BorderRadius.circular(10),
             ),
             focusedBorder: OutlineInputBorder(
-              borderSide:
-                  BorderSide(color: appTheme.studyTheme.colorScheme.primary),
+              borderSide: BorderSide(color: Colors.grey.shade400),
+              borderRadius: BorderRadius.circular(10),
             ),
-            fillColor: appTheme.studyTheme.colorScheme.secondary,
+            fillColor: backgroundColor,
             filled: true,
             hintText: hintText,
             prefixIcon: input_icon,
-            hintStyle: const TextStyle(color: Colors.black54)),
+            hintStyle: TextStyle(color: Colors.grey[500])),
       ),
     );
   }
